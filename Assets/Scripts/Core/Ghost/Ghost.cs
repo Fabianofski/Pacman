@@ -1,11 +1,16 @@
+// /**
+//  * This file is part of: Pacman
+//  * Created: 23.09.2022
+//  * Copyright (C) 2022 Fabian Friedrich
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Ghost
 {
-    public class RedGhost : MonoBehaviour
+    public abstract class Ghost : MonoBehaviour
     {
-
-        [SerializeField] private Transform destination;
         private GameObject[] players;
 
         private void Awake()
@@ -13,8 +18,7 @@ namespace F4B1.Core
             players = GameObject.FindGameObjectsWithTag("Player");
         }
 
-
-        private void Update()
+        protected Vector2 FindNearestPlayer()
         {
             var closestDistance = Mathf.Infinity;
             var nearestPlayer = new Vector2();
@@ -26,7 +30,7 @@ namespace F4B1.Core
                 nearestPlayer = player.transform.position;
             }
 
-            destination.position = nearestPlayer;
+            return nearestPlayer;
         }
     }
 }
