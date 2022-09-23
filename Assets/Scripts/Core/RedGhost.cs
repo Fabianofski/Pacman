@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core
 {
     public class RedGhost : MonoBehaviour
     {
