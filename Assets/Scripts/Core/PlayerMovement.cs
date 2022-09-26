@@ -9,11 +9,21 @@ using UnityEngine.InputSystem;
 
 namespace F4B1.Core
 {
+
+[RequireComponent(typeof(Rigidbody2D))]
+
     public class PlayerMovement : MonoBehaviour
     {
-
+        private Rigidbody2D rigidbody;
+        private float movespeed = 5f;
         private Vector2 input;
+
         [SerializeField] private InputAction moveInputAction;
+
+        private void Awake()
+        {
+            this.rigidbody = GetComponent<Rigidbody2D>();
+        }
 
         private void OnEnable()
         {
@@ -40,6 +50,11 @@ namespace F4B1.Core
             // VVVV Kannst es hier mal ausprobieren einfach auskommentieren und WASD oder die Pfeiltasten verwenden
             // Kommentar danach bitte löschen
             // Debug.Log(gameobject.name + " " + input);
+        }
+
+        public void FixedUpdate()
+        {
+            rigidbody.velocity = new Vector2(input.x * movespeed , input.y * movespeed);
         }
     }
 }
