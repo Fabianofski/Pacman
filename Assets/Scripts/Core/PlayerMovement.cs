@@ -6,6 +6,7 @@
 //  **/
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityAtoms.BaseAtoms;
 
 namespace F4B1.Core
 {
@@ -45,14 +46,16 @@ namespace F4B1.Core
             rigidbody.velocity = input * movespeed;
         }
 
-        public void InvertControls()
+        public void InvertControls(GameObject sender)
         {
+            if (sender.name == gameObject.name) return;
+            Debug.Log("invert" + gameObject.name);
             Invoke(nameof(ResetInvertedControls), 3f);
         }
 
         private void ResetInvertedControls()
         {
-
+            Debug.Log("invert reset");
         }
     }
 }
