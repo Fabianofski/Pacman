@@ -5,6 +5,7 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using System;
 using UnityEngine;
 
 namespace F4B1.Core.Ghost
@@ -31,6 +32,14 @@ namespace F4B1.Core.Ghost
             }
 
             return nearestPlayer;
+        }
+
+        private void OnTriggerEnter2D(Collider2D col)
+        {
+            Debug.Log("Collide");
+            if (!col.CompareTag("Player")) return;
+
+            col.GetComponent<Health>().Hit();
         }
     }
 }
