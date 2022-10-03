@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6968479621484574620}
   - component: {fileID: 6968479621484574610}
   - component: {fileID: 6968479621484574611}
-  - component: {fileID: 2392492512658664966}
+  - component: {fileID: 7737333414658908472}
   m_Layer: 0
   m_Name: ScoreCoin
   m_TagString: Untagged
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: -0.00000047683716, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!114 &2392492512658664966
+--- !u!114 &7737333414658908472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,6 +111,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6968479621484574621}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76bc0928809a26148abaec99c6e3fc8d, type: 3}
+  m_Script: {fileID: 11500000, guid: fed914337d6d34f4484cfd8e4902735b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

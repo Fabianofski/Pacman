@@ -15,9 +15,9 @@ namespace F4B1
         {
             score.Reset();
         }
-        public void CoinCollected()
+        public void CoinCollected(int i)
         {
-            score.Value++;
+            score.Value = score.Value + i;
         }
     }
 }
