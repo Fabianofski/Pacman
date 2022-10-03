@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6366340531303306841}
   - component: {fileID: 6366340531303306846}
+  - component: {fileID: -5957714134309185828}
   - component: {fileID: 6366340531303306847}
   - component: {fileID: 6366340531303306844}
   m_Layer: 0
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemEvent: {fileID: 11400000, guid: 6f779145cc2599744ac60cd39f1ec903, type: 2}
+--- !u!114 &-5957714134309185828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6366340531303306845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed914337d6d34f4484cfd8e4902735b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 10
 --- !u!61 &6366340531303306847
 BoxCollider2D:
   m_ObjectHideFlags: 0

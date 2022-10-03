@@ -9,18 +9,16 @@ namespace F4B1.Core
 
     public class PlayerMovement : MonoBehaviour
     {
-        private Rigidbody2D rigidbody;
-        private float movespeed = 5f;
+        private Rigidbody2D rb2d;
+        private const float MoveSpeed = 5f;
         private Vector2 input;
-        private bool inverted = false;
-        private bool freeze = false;
-        private string itemmoveeffect = "normal";
+        private string itemMoveEffect = "normal";
 
         [SerializeField] private InputAction moveInputAction;
 
         private void Awake()
         {
-            this.rigidbody = GetComponent<Rigidbody2D>();
+            this.rb2d = GetComponent<Rigidbody2D>();
         }
 
         private void OnEnable()
@@ -40,22 +38,22 @@ namespace F4B1.Core
 
         public void FixedUpdate()
         {
-            switch(itemmoveeffect)
+            switch(itemMoveEffect)
             {
                 case "normal":
-                    rigidbody.velocity = input * movespeed;
+                    rb2d.velocity = input * MoveSpeed;
                     break;
                 case "inverted":
-                    rigidbody.velocity = input * -1 * movespeed;
+                    rb2d.velocity = input * -MoveSpeed;
                     break;
                 case "frozen":
-                    rigidbody.velocity = Vector2.zero;
+                    rb2d.velocity = Vector2.zero;
                     break;
                 case "fast":
-                    rigidbody.velocity = input * 10f;
+                    rb2d.velocity = input * 10f;
                     break;
                 case "slow":
-                    rigidbody.velocity = input * 2f;
+                    rb2d.velocity = input * 2f;
                     break;
             }           
         }
@@ -64,7 +62,7 @@ namespace F4B1.Core
         {
             if (sender.name == gameObject.name) return;
             Debug.Log("invert " + gameObject.name);
-            itemmoveeffect = "inverted";
+            itemMoveEffect = "inverted";
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -72,7 +70,7 @@ namespace F4B1.Core
         {
             if (sender.name == gameObject.name) return;
             Debug.Log("freeze " + gameObject.name);
-            itemmoveeffect = "frozen";
+            itemMoveEffect = "frozen";
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -80,7 +78,7 @@ namespace F4B1.Core
         {
             if (sender.name == gameObject.name) return;
             Debug.Log("slow " + gameObject.name);
-            itemmoveeffect = "slow";
+            itemMoveEffect = "slow";
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -88,14 +86,14 @@ namespace F4B1.Core
         {
             if (sender.name == gameObject.name) return;
             Debug.Log("fast " + gameObject.name);
-            itemmoveeffect = "fast";
+            itemMoveEffect = "fast";
             Invoke(nameof(ResetControls), 3f);
         }
 
         private void ResetControls()
         {
             Debug.Log("controls reset");
-            itemmoveeffect = "normal";
+            itemMoveEffect = "normal";
         }
     }
 }
