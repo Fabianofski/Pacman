@@ -596,6 +596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: {fileID: 11400000, guid: cb0c8baeab0fac14f93065678beb06cd, type: 2}
+  spawnPoint: {x: -7.5, y: 3.5}
 --- !u!114 &4254130916247040735
 MonoBehaviour:
   m_ObjectHideFlags: 0

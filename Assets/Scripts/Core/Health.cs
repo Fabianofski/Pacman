@@ -15,10 +15,15 @@ namespace F4B1.Core
     {
 
         [SerializeField] private IntVariable life;
+        [SerializeField] private Vector2 spawnPoint;
         private bool invincible;
+        private SpriteRenderer spriteRenderer;
+        [SerializeField] private float invincibilityDuration = 1;
+        [SerializeField] private int blinkRate = 4;
         
         private void Awake()
         {
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             life.Reset();
         }
 
@@ -27,7 +32,24 @@ namespace F4B1.Core
             if (invincible) return;
             life.Value--;
             invincible = true;
+            Blink();
+            transform.position = spawnPoint;
             Invoke(nameof(ResetInvincibility), 1f);
+        }
+
+        private void Blink()
+        {
+            LeanTween.value(gameObject, 1, 0, invincibilityDuration / blinkRate).setOnUpdate((float val) =>
+            {
+                var col = spriteRenderer.color;
+                col.a = val;
+                spriteRenderer.color = col;
+            }).setLoopCount(blinkRate).setOnComplete(() =>
+            {
+                var col = spriteRenderer.color;
+                col.a = 1;
+                spriteRenderer.color = col;
+            });
         }
 
         private void ResetInvincibility()
