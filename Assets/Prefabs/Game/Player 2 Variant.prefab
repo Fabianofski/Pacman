@@ -91,5 +91,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4254130916247040735, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
+--- !u!1 &2961337973095912468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8864001614969794031, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
+  m_PrefabInstance: {fileID: 5916476136505915899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3209453974415246557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2961337973095912468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c60ad8286dd25a448696dfd1a229bb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 11400000, guid: c23883fdad044414589656b90e08f983, type: 2}
