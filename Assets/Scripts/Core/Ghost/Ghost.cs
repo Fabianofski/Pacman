@@ -36,7 +36,6 @@ namespace F4B1.Core.Ghost
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            Debug.Log("Collide");
             if (!col.CompareTag("Player")) return;
 
             col.GetComponent<Health>().Hit();

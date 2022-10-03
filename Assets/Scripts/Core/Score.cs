@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core
 {
     public class Score : MonoBehaviour
     {
@@ -17,7 +15,7 @@ namespace F4B1
         }
         public void CoinCollected(int i)
         {
-            score.Value = score.Value + i;
+            score.Value += i;
         }
     }
 }
