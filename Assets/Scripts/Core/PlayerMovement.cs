@@ -84,7 +84,7 @@ namespace F4B1.Core
 
         public void FastControls(GameObject sender)
         {
-            if (sender.name == gameObject.name) return;
+            if (sender.name != gameObject.name) return;
             Debug.Log("fast " + gameObject.name);
             itemMoveEffect = "fast";
             Invoke(nameof(ResetControls), 3f);
