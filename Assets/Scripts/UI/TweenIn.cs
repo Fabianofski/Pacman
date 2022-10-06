@@ -37,7 +37,7 @@ namespace F4B1.UI
         {
             go.transform.localScale = Vector3.zero;
             raiseSoundEvent.Raise(wooshSound);
-            LeanTween.scale(go, Vector3.one, tweenDuration).setEase(scaleTweenType).setDelay(d);
+            LeanTween.scale(go, Vector3.one, tweenDuration).setEase(scaleTweenType).setDelay(d).setIgnoreTimeScale(true);;
         }
     }
 }

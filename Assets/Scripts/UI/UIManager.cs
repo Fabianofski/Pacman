@@ -42,23 +42,27 @@ namespace F4B1.UI
         private void OnPause(InputAction.CallbackContext ctx)
         {
             pauseToggled.Value = !pauseToggled.Value;
+            Time.timeScale = pauseToggled.Value ? 0 : 1;
         }
 
         public void LoadNextScene()
         {
             ResetAtoms();
+            Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         public void LoadMenuScene()
         {
             ResetAtoms();
+            Time.timeScale = 1;
             SceneManager.LoadScene(0);
         }
 
         public void ReloadCurrentScene()
         {
             ResetAtoms();
+            Time.timeScale = 1;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 

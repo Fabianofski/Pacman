@@ -15,11 +15,12 @@ namespace F4B1.UI
 
         [SerializeField] private string prefix;
         [SerializeField] private string suffix;
+        [SerializeField] private int minFormatSize = 1;
         [SerializeField] private TextMeshProUGUI text;
         
         public void UpdateText(int value)
         {
-            text.text = prefix + value + suffix;
+            text.text = prefix + value.ToString("D"+minFormatSize) + suffix;
         }
     }
 }
