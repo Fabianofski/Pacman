@@ -6,6 +6,7 @@
 
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 namespace F4B1.UI
 {
@@ -13,27 +14,44 @@ namespace F4B1.UI
     {
         [SerializeField] private GameObject firstSelected;
         private EventSystem _eventSystem;
+        [SerializeField] private InputAction onNavigateAction;
+        [SerializeField] private InputAction onMouseMoveAction;
 
         public GameObject FirstSelected
         {
             set => firstSelected = value;
         }
 
-        public GameObject LastSelectedGameObject { get; private set; }
+        private GameObject LastSelectedGameObject { get; set; }
 
+        private void OnEnable()
+        {
+            onNavigateAction.Enable();
+            onMouseMoveAction.Enable();
+
+            onNavigateAction.performed += _ => OnNavigate();
+            onMouseMoveAction.performed += _ => OnMouseMove();
+        }
+
+        private void OnDisable()
+        {
+            onNavigateAction.Disable();
+            onMouseMoveAction.Disable();
+        }
+        
         private void Start()
         {
             _eventSystem = FindObjectOfType<EventSystem>();
             LastSelectedGameObject = firstSelected;
         }
 
-        public void OnNavigate()
+        private void OnNavigate()
         {
             if (_eventSystem.currentSelectedGameObject != null) return;
             _eventSystem.SetSelectedGameObject(LastSelectedGameObject);
         }
 
-        public void OnMouseMove()
+        private void OnMouseMove()
         {
             if (_eventSystem.currentSelectedGameObject == null) return;
             LastSelectedGameObject = _eventSystem.currentSelectedGameObject;

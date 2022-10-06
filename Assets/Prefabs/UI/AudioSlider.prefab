@@ -186,7 +186,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6857057635052919430
 CanvasRenderer:
@@ -218,8 +218,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Sounds
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ce4a5f300d4bdc4aa47ecbd2c651958, type: 2}
+  m_sharedMaterial: {fileID: -5533899290557594104, guid: 3ce4a5f300d4bdc4aa47ecbd2c651958, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -243,8 +243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -676,12 +676,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
-          m_TargetAssemblyTypeName: UnityAtoms.AtomEvent`1[[F4B1.Audio.Sound, GeneratedAtoms
+          m_TargetAssemblyTypeName: UnityAtoms.AtomEvent`1[[F4B1.Audio.Sound, Assembly-CSharp
           m_MethodName: Raise
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11400000, guid: 7bb831b7b9c146c419f16c198a6bcd86, type: 2}
-            m_ObjectArgumentAssemblyTypeName: F4B1.Audio.Sound, GeneratedAtoms
+            m_ObjectArgumentAssemblyTypeName: F4B1.Audio.Sound, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
