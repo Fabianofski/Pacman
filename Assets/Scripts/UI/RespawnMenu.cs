@@ -29,6 +29,7 @@ namespace F4B1.UI
             if (livesLeft > 0) return;
             respawnMenu.SetActive(true);
             text.text = "PLAYER 1 DIED";
+            Time.timeScale = 0;
             gameOver.Value = true;
         }
         
@@ -37,6 +38,7 @@ namespace F4B1.UI
             if (livesLeft > 0) return;
             respawnMenu.SetActive(true);
             text.text = "PLAYER 2 DIED";
+            Time.timeScale = 0;
             gameOver.Value = true;
         }
         

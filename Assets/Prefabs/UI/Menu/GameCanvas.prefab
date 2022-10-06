@@ -618,6 +618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RespawnMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2291916133277406630, guid: 4a5be72166e92da4f9efe0d1e4f918dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2291916133277406631, guid: 4a5be72166e92da4f9efe0d1e4f918dd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
