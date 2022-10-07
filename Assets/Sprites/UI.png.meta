@@ -3,7 +3,7 @@ guid: ea4a9646f1791554c9b645ed873d0b1a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -442,7 +443,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,7 +464,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,7 +485,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,7 +506,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,7 +527,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,7 +548,7 @@ TextureImporter:
         width: 69
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,7 +569,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,7 +590,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -610,7 +611,7 @@ TextureImporter:
         width: 70
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -618,6 +619,69 @@ TextureImporter:
       bones: []
       spriteID: a24a95c68457f1646827694eee71127c
       internalID: 1281312890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 22
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e420113f4ec840f45ba5e0c22d71c05b
+      internalID: 896386433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Selected
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 23
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb57fed7f879027479d881ea188de750
+      internalID: 600236273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_Clicked
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 23
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341df2ac2a2134a44b42886351d660c1
+      internalID: 1420922020
       vertices: []
       indices: 
       edges: []
@@ -634,6 +698,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Start_Clicked: -1615334344
+      Arrow_Selected: 600236273
       Quit: 21048188
       Continue_Clicked: -48655415
       Back_Selected: 191069821
@@ -641,11 +706,12 @@ TextureImporter:
       Options_Clicked: -1708926206
       Start_Selected: -975621168
       Menu: 1377785650
+      Arrow: -1887602441
       Handle: 1683934999
+      Arrow_Clicked: 1420922020
       Handle_Clicked: 1227006927
       Continue_Selected: 705963678
       Options_Selected: 110380096
-      UI_0: -1887602441
       Quit_Clicked: -696550191
       Options: 55269697
       Slider_BG: 1200817434

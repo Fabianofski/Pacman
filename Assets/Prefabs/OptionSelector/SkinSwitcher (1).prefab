@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7533366294225644583, guid: fb8ac68f13185d14cbee368e2abd0583, type: 3}
       propertyPath: m_Name
-      value: OptionSwitcher (1)
+      value: SkinSwitcher (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7533366294564633468, guid: fb8ac68f13185d14cbee368e2abd0583, type: 3}
       propertyPath: m_Camera
@@ -66,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 7533366294564633471, guid: fb8ac68f13185d14cbee368e2abd0583, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389633330131567120, guid: fb8ac68f13185d14cbee368e2abd0583, type: 3}
+      propertyPath: m_text
+      value: PLAYER1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb8ac68f13185d14cbee368e2abd0583, type: 3}
