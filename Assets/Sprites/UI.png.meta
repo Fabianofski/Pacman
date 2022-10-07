@@ -628,11 +628,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 115
-        y: 22
+        y: 23
         width: 13
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -653,7 +653,7 @@ TextureImporter:
         width: 13
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -674,7 +674,7 @@ TextureImporter:
         width: 13
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,6 +682,69 @@ TextureImporter:
       bones: []
       spriteID: 341df2ac2a2134a44b42886351d660c1
       internalID: 1420922020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restart
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 70
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1217fc6addc178d46a674b71031fcdbd
+      internalID: -1828370514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restart_Selected
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 171
+        width: 70
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef839a60b15e3a46b47fc72fd86680f
+      internalID: -666883395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Restart_Clicked
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 171
+        width: 70
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a42c6b6cb6feb45a1beb674f07dd94
+      internalID: -391928234
       vertices: []
       indices: 
       edges: []
@@ -698,6 +761,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Start_Clicked: -1615334344
+      Restart_Selected: -666883395
       Arrow_Selected: 600236273
       Quit: 21048188
       Continue_Clicked: -48655415
@@ -710,8 +774,10 @@ TextureImporter:
       Handle: 1683934999
       Arrow_Clicked: 1420922020
       Handle_Clicked: 1227006927
+      Restart: -1828370514
       Continue_Selected: 705963678
       Options_Selected: 110380096
+      Restart_Clicked: -391928234
       Quit_Clicked: -696550191
       Options: 55269697
       Slider_BG: 1200817434

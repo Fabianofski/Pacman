@@ -8,13 +8,41 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: -391928234, guid: ea4a9646f1791554c9b645ed873d0b1a, type: 3}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: -391928234, guid: ea4a9646f1791554c9b645ed873d0b1a, type: 3}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: -666883395, guid: ea4a9646f1791554c9b645ed873d0b1a, type: 3}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: -666883395, guid: ea4a9646f1791554c9b645ed873d0b1a, type: 3}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 11400000, guid: e7008b520ef02a84ca883faf2852d679, type: 2}
     - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: Raise
       objectReference: {fileID: 0}
+    - target: {fileID: 446820495000784472, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityAtoms.BaseAtoms.VoidEvent, UnityAtoms.UnityAtomsBaseAtoms.Runtime
+      objectReference: {fileID: 0}
+    - target: {fileID: 446820495000784473, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1828370514, guid: ea4a9646f1791554c9b645ed873d0b1a, type: 3}
     - target: {fileID: 446820495000784486, guid: c91e86426ee97504d83ae3737a20f128, type: 3}
       propertyPath: m_Name
       value: RestartBtn
