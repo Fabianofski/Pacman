@@ -37,6 +37,7 @@ namespace F4B1.Core
 
         public void Update()
         {
+            if (!pressed) return;
             input = moveInputAction.ReadValue<Vector2>();
         }
 
