@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="" />
+    <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu/GameCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Menu/GameCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +74,7 @@
       <workItem from="1664806941194" duration="2991000" />
       <workItem from="1665074147561" duration="3027000" />
       <workItem from="1665218307261" duration="2995000" />
+      <workItem from="1665252538807" duration="871000" />
     </task>
     <servers />
   </component>

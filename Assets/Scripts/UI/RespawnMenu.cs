@@ -6,6 +6,7 @@
 //  **/
 
 using System;
+using F4B1.Core;
 using TMPro;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -15,6 +16,9 @@ namespace F4B1.UI
     public class RespawnMenu : MonoBehaviour
     {
 
+        [SerializeField] private IntVariable player1Coins;
+        [SerializeField] private IntVariable player2Coins;
+        
         [SerializeField] private BoolVariable gameOver;
         [SerializeField] private GameObject respawnMenu;
         [SerializeField] private TextMeshProUGUI text;
@@ -41,6 +45,16 @@ namespace F4B1.UI
             Time.timeScale = 0;
             gameOver.Value = true;
         }
-        
+
+        public void CoinWasCollected()
+        {
+            var coins = FindObjectsOfType<Coin>();
+            if (coins.Length > 1) return;
+            
+            respawnMenu.SetActive(true);
+            text.text = player1Coins.Value > player2Coins.Value ? "PLAYER 1 Won" : "PLAYER 2 Won";
+            Time.timeScale = 0;
+            gameOver.Value = true;
+        }
     }
 }
