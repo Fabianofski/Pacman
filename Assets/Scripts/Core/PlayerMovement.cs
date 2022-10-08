@@ -14,12 +14,15 @@ namespace F4B1.Core
         private Vector2 input;
         private string itemMoveEffect = "normal";
         public bool PowerPellet { get; private set; }
+        private bool pressed;
         
         [SerializeField] private InputAction moveInputAction;
 
         private void Awake()
         {
             this.rb2d = GetComponent<Rigidbody2D>();
+            moveInputAction.performed += _ => pressed = true;
+            moveInputAction.canceled += _ => pressed = false;
         }
 
         private void OnEnable()
