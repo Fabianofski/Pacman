@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6560323946589170405, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_Name
-      value: OrangeGhost
+      value: OrangeGhost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_RootOrder
@@ -74,6 +74,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2646841343982147979, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+--- !u!4 &3319256471747568161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4978480579640110663, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+  m_PrefabInstance: {fileID: 7712207211343055974}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3462617503601142401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6560323946682328807, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
@@ -91,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f2188ba99e4434cb21781e2aa84fd42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawn: {fileID: 3319256471747568161}
   destination: {fileID: 3462617504546476105}
 --- !u!4 &3462617504546476105 stripped
 Transform:

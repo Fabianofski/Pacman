@@ -13,7 +13,8 @@ namespace F4B1.Core
         private const float MoveSpeed = 5f;
         private Vector2 input;
         private string itemMoveEffect = "normal";
-
+        public bool PowerPellet { get; private set; }
+        
         [SerializeField] private InputAction moveInputAction;
 
         private void Awake()

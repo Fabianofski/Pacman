@@ -13,6 +13,10 @@ namespace F4B1.Core.Ghost
     public abstract class Ghost : MonoBehaviour
     {
         private GameObject[] players;
+        [SerializeField] private Transform spawn;
+        [SerializeField] protected Transform destination;
+        protected bool dead;
+
 
         private void Awake()
         {
@@ -38,7 +42,26 @@ namespace F4B1.Core.Ghost
         {
             if (!col.CompareTag("Player")) return;
 
-            col.GetComponent<Health>().Hit();
+            if (col.GetComponent<PlayerMovement>().PowerPellet)
+                Die();
+            else
+                col.GetComponent<Health>().Hit();
+        }
+
+        private void Die()
+        {
+            dead = true;
+            destination.position = spawn.position;
+        }
+
+        public void DoRespawn()
+        {
+            Invoke(nameof(Respawn), 1f);
+        }
+
+        private void Respawn()
+        {
+            dead = false;
         }
     }
 }

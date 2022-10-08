@@ -11,10 +11,9 @@ namespace F4B1.Core.Ghost
 {
     public class OrangeGhost : Ghost
     {
-        [SerializeField] private Transform destination;
-
         private void Update()
         {
+            if (dead) return;
             var nearestPlayer = FindNearestPlayer();
             destination.position = nearestPlayer;
         }

@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostRespawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostRespawner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/BlueGhost Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/BlueGhost Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/OrangeGhost Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/OrangeGhost Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/PinkGhost Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/PinkGhost Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/SlowItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/SlowItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Player 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Player 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/BlueGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/BlueGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/OrangeGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/OrangeGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/PinkGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/PinkGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/RedGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/RedGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +91,7 @@
       <workItem from="1664733984412" duration="2187000" />
       <workItem from="1664806941194" duration="2991000" />
       <workItem from="1665074147561" duration="3027000" />
+      <workItem from="1665218307261" duration="2034000" />
     </task>
     <servers />
   </component>
