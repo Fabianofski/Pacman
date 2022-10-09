@@ -16,8 +16,8 @@ TagManager:
   - Tilemap
   - Ghost
   - Player
-  - 
-  - 
+  - GhostCollider
+  - Intersection
   - 
   - 
   - 

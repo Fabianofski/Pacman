@@ -1,3 +1,10 @@
+// /**
+//  * This file is part of: Pacman
+//  * Created: 03.10.2022
+//  * Copyright (C) 2022 Amelia Witon
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 

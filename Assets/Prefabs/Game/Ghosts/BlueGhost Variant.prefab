@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264594527827645441, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8264594527827645441, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8264594527827645441, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: m_LocalPosition.z
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264594527827645442, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: m_Name
-      value: BlueGhost Variant
+      value: BlueGhost
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 445171788190548940, guid: 85daa896087d78c4e9a9c903df310629, type: 3}

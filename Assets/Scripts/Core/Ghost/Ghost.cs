@@ -16,11 +16,12 @@ namespace F4B1.Core.Ghost
         [SerializeField] private Transform spawn;
         [SerializeField] protected Transform destination;
         protected bool dead;
-
-
-        private void Awake()
+        protected GhostPathfinder pathfinder;
+        
+        protected virtual void Awake()
         {
             players = GameObject.FindGameObjectsWithTag("Player");
+            pathfinder = GetComponent<GhostPathfinder>();
         }
 
         protected Vector2 FindNearestPlayer()

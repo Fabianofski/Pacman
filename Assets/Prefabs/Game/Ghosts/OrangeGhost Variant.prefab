@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6560323946589170405, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_Name
-      value: OrangeGhost Variant
+      value: OrangeGhost
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_RootOrder
@@ -17,11 +17,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_LocalPosition.z
