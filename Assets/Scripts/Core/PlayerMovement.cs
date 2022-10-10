@@ -22,6 +22,7 @@ namespace F4B1.Core
         private string itemMoveEffect = "normal";
         public bool PowerPellet { get; private set; }
         private bool pressed;
+        public bool DoubleScore { get; private set; }
         
         [SerializeField] private InputAction moveInputAction;
 
@@ -67,6 +68,12 @@ namespace F4B1.Core
                 case "slow":
                     rb2d.velocity = input * 2f;
                     break;
+                case "power":
+                    this.PowerPellet = true;
+                    break;
+                case "double":
+                    this.DoubleScore = true;
+                    break;
             }           
         }
 
@@ -99,6 +106,22 @@ namespace F4B1.Core
             if (sender.name != gameObject.name) return;
             Debug.Log("fast " + gameObject.name);
             itemMoveEffect = "fast";
+            Invoke(nameof(ResetControls), 3f);
+        }
+
+        public void Power(GameObject sender)
+        {
+            if (sender.name != gameObject.name) return;
+            Debug.Log("power " + gameObject.name);
+            itemMoveEffect = "power";
+            Invoke(nameof(ResetControls), 3f);
+        }
+
+        public void Double(GameObject sender)
+        {
+            if (sender.name != gameObject.name) return;
+            Debug.Log("double " + gameObject.name);
+            itemMoveEffect = "double";
             Invoke(nameof(ResetControls), 3f);
         }
 
