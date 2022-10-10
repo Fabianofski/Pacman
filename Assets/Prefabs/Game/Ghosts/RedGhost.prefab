@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 1369284362915413126}
   - component: {fileID: 6779245684423718264}
   - component: {fileID: 8264594527652632582}
-  - component: {fileID: 551988091575814118}
+  - component: {fileID: 3161201134425889520}
   m_Layer: 7
   m_Name: GhostGFX
   m_TagString: Ghost
@@ -207,6 +207,8 @@ MonoBehaviour:
   scatterPos: {fileID: 1647821846}
   houseExitPos: {x: -1, y: 3}
   leaveHouseTime: 0
+  ghostState: HOUSE
+  globalGhostState: {fileID: 11400000, guid: deb440367b7ad0a4792feeb3b1787474, type: 2}
 --- !u!114 &5522497224276478100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +344,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &551988091575814118
+--- !u!114 &3161201134425889520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8264594527652632576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 775f7409782fa4b619d9153405dd1c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _developerDescription: 
@@ -360,7 +362,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 445171788190548940}
         m_TargetAssemblyTypeName: F4B1.Core.Ghost.Ghost, Assembly-CSharp
-        m_MethodName: Scatter
+        m_MethodName: GlobalGhostStateChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -376,7 +378,7 @@ MonoBehaviour:
   _replayEventBufferOnRegister: 1
   _eventReference:
     _usage: 0
-    _event: {fileID: 11400000, guid: b7475a1291fa3384abd27dda99f77c12, type: 2}
+    _event: {fileID: 11400000, guid: 2f0d06aa08801e84daec5d22c5731681, type: 2}
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}

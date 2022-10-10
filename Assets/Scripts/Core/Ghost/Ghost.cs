@@ -6,6 +6,8 @@
 //  **/
 
 using System;
+using UnityAtoms.BaseAtoms;
+using UnityAtoms.FSM;
 using UnityEngine;
 
 namespace F4B1.Core.Ghost
@@ -19,10 +21,8 @@ namespace F4B1.Core.Ghost
         [SerializeField] private Vector2 houseExitPos;
         [SerializeField] private int leaveHouseTime;
         protected GhostPathfinder pathfinder;
-        protected bool dead;
-        private bool frightened;
-        private bool scatter;
-        [SerializeField] private bool leaveHouse;
+        [SerializeField] protected string ghostState = "HOUSE";
+        [SerializeField] private StringVariable globalGhostState;
         
         private void Awake()
         {
@@ -33,15 +33,28 @@ namespace F4B1.Core.Ghost
 
         protected virtual void Update()
         {
-            frightened = GetNearestPlayer().GetComponent<PlayerMovement>().PowerPellet;
-            pathfinder.randomHeuristic = frightened && !pathfinder.inHouse && !dead;
-            if (leaveHouse)
+            pathfinder.randomHeuristic = GhostIsFrightened();
+            switch (ghostState)
             {
-                destination.position = houseExitPos;
-                leaveHouse = RoundVector(transform.position) != houseExitPos;
+                case "LEAVE_HOUSE":
+                {
+                    destination.position = houseExitPos;
+                    if(RoundVector(transform.position) == houseExitPos)
+                        ghostState =  globalGhostState.Value;
+                    break;
+                }
+                case "SCATTER":
+                    destination.position = scatterPos.position;
+                    break;
             }
-            else if (scatter)
-                destination.position = scatterPos.position;
+        }
+
+        private bool GhostIsFrightened()
+        {
+            var playerHasPowerPellet = GetNearestPlayer().GetComponent<PlayerMovement>().PowerPellet;
+            var frightened = playerHasPowerPellet && ghostState is "SCATTER" or "CHASE";
+            if (frightened && !pathfinder.randomHeuristic) pathfinder.ReverseDirection();
+            return frightened;
         }
 
         private Vector2 RoundVector(Vector2 vector)
@@ -81,7 +94,7 @@ namespace F4B1.Core.Ghost
 
         private void Die()
         {
-            dead = true;
+            ghostState = "DEAD";
             pathfinder.randomHeuristic = false;
             destination.position = spawn.position;
         }
@@ -93,18 +106,19 @@ namespace F4B1.Core.Ghost
 
         private void Respawn()
         {
-            dead = false;
+            ghostState = "LEAVE_HOUSE";
         }
 
-        public void Scatter(bool value)
+        public void GlobalGhostStateChanged(string state)
         {
-            scatter = value;
+            if (ghostState is "SCATTER" or "CHASE") 
+                ghostState = state;
         }
 
         public void LeaveHouse()
         {
             pathfinder.inHouse = false;
-            leaveHouse = true;
+            ghostState = "LEAVE_HOUSE";
         }
     }
 }

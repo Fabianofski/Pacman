@@ -13,8 +13,8 @@ namespace F4B1.Core.Ghost
     {
         protected override void Update()
         {
-            if (dead) return;
-            
+            if (ghostState is "DEAD") return;
+
             var nearestPlayer = GetNearestPlayerPosition();
             destination.position = nearestPlayer;
             

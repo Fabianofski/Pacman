@@ -37,6 +37,11 @@ namespace F4B1.Core.Ghost
             houseBorderLayer = LayerMask.GetMask("House");
         }
 
+        public void ReverseDirection()
+        {
+            currentDir = -currentDir;
+        }
+        
         private void FixedUpdate()
         {
             rb2d.velocity = currentDir * speed;

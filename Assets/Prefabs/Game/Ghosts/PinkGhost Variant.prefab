@@ -79,6 +79,10 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1844530740086663315}
+    - target: {fileID: 7593872747620018289, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1844530740086663315}
     m_RemovedComponents:
     - {fileID: 5230923544345977599, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
@@ -109,6 +113,8 @@ MonoBehaviour:
   scatterPos: {fileID: 1700020213957628435}
   houseExitPos: {x: -1, y: 3}
   leaveHouseTime: 15
+  ghostState: HOUSE
+  globalGhostState: {fileID: 11400000, guid: deb440367b7ad0a4792feeb3b1787474, type: 2}
 --- !u!4 &7288534555877569741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3462617504546476105, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
