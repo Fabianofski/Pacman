@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462617503440610947, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
       propertyPath: m_Name
-      value: PinkGhost
+      value: PinkGhost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3462617503601142407, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
       propertyPath: m_Color.b
@@ -67,9 +67,26 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4808732422589560471, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808732422589560471, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977887814331020647, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1844530740086663315}
     m_RemovedComponents:
     - {fileID: 5230923544345977599, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+--- !u!4 &1700020213957628435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4808732422589560471, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+  m_PrefabInstance: {fileID: 6137179004122637444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7288534554674269701 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3462617503601142401, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
@@ -89,6 +106,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 8879970252349834917}
   destination: {fileID: 7288534555877569741}
+  scatterPos: {fileID: 1700020213957628435}
+  houseExitPos: {x: -1, y: 3}
+  leaveHouseTime: 15
 --- !u!4 &7288534555877569741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3462617504546476105, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}

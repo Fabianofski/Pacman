@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1647821845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1647821846}
+  m_Layer: 7
+  m_Name: ScatterPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1647821846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647821845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10, y: 14.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8264594527827645441}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &679729663066861349
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +166,7 @@ GameObject:
   - component: {fileID: 1369284362915413126}
   - component: {fileID: 6779245684423718264}
   - component: {fileID: 8264594527652632582}
+  - component: {fileID: 551988091575814118}
   m_Layer: 7
   m_Name: GhostGFX
   m_TagString: Ghost
@@ -172,6 +204,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 7830724586403745952}
   destination: {fileID: 8264594526722040520}
+  scatterPos: {fileID: 1647821846}
+  houseExitPos: {x: -1, y: 3}
+  leaveHouseTime: 0
 --- !u!114 &5522497224276478100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 8264594526722040520}
   speed: 3
-  currentDir: {x: 0, y: 1}
+  randomHeuristic: 0
+  inHouse: 1
 --- !u!61 &8892382020372695107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +342,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &551988091575814118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264594527652632576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6ab7cbc45164d19b20476265c251c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: 
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 445171788190548940}
+        m_TargetAssemblyTypeName: F4B1.Core.Ghost.Ghost, Assembly-CSharp
+        m_MethodName: Scatter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+  _conditions: []
+  _operator: 0
+  _replayEventBufferOnRegister: 1
+  _eventReference:
+    _usage: 0
+    _event: {fileID: 11400000, guid: b7475a1291fa3384abd27dda99f77c12, type: 2}
+    _eventInstancer: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
 --- !u!1 &8264594527827645442
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +411,7 @@ Transform:
   - {fileID: 8264594527652632583}
   - {fileID: 8264594526722040520}
   - {fileID: 7830724586403745952}
+  - {fileID: 1647821846}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

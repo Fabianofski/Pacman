@@ -7,9 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3007084244281703153, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3007084244281703153, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3319787407380658433, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5230923544345977599}
     - target: {fileID: 6560323946589170405, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_Name
-      value: OrangeGhost
+      value: OrangeGhost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_RootOrder
@@ -98,8 +110,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 3319256471747568161}
   destination: {fileID: 3462617504546476105}
+  scatterPos: {fileID: 4808732422589560471}
+  houseExitPos: {x: -1, y: 3}
+  leaveHouseTime: 10
 --- !u!4 &3462617504546476105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6560323947626617903, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+  m_PrefabInstance: {fileID: 7712207211343055974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4808732422589560471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3007084244281703153, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
   m_PrefabInstance: {fileID: 7712207211343055974}
   m_PrefabAsset: {fileID: 0}

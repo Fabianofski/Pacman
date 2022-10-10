@@ -12,13 +12,15 @@ namespace F4B1.Core.Ghost
 {
     public class OrangeGhost : Ghost
     {
-        private void Update()
+        protected override void Update()
         {
             if (dead) return;
-            
-            var nearestPlayer = FindNearestPlayer();
+
+            var nearestPlayer = GetNearestPlayerPosition();
             destination.position = nearestPlayer;
             pathfinder.randomHeuristic = Vector2.Distance(transform.position, nearestPlayer) < 8;
+            
+            base.Update();
         }
         
         

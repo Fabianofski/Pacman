@@ -18,10 +18,12 @@ namespace F4B1.Core.Ghost
         [SerializeField] private Transform destination;
         [SerializeField] private int speed;
         public bool randomHeuristic;
+        public bool inHouse = true;
         
         private Rigidbody2D rb2d;
         private int wallLayer;
         private int intersectionLayer;
+        private int houseBorderLayer;
         
         private readonly Vector2[] directions = new[] { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
         private Vector2 currentDir = Vector2.up;
@@ -32,6 +34,7 @@ namespace F4B1.Core.Ghost
             rb2d = GetComponent<Rigidbody2D>();
             wallLayer = LayerMask.GetMask("Tilemap");
             intersectionLayer = LayerMask.GetMask("Intersection");
+            houseBorderLayer = LayerMask.GetMask("House");
         }
 
         private void FixedUpdate()
@@ -48,12 +51,15 @@ namespace F4B1.Core.Ghost
             
             if (!Physics2D.Raycast(transform.position, rb2d.velocity, .01f, intersectionLayer))
                 return false;
-
+            
             var possibleDir = 0;
             foreach (var dir in directions)
             {
-                if (!Physics2D.BoxCast(GetSnappedPosition(), Vector2.one * .9f, 0, dir, 1, wallLayer))
+                if (!Physics2D.BoxCast(GetSnappedPosition() + dir, Vector2.one * .9f, 0, dir, 0, wallLayer))
+                {
                     possibleDir++;
+                    Debug.Log(dir);
+                }
             }
             return possibleDir >= 3;
         }
@@ -84,6 +90,8 @@ namespace F4B1.Core.Ghost
                 if (dir == -currentDir) continue; // Pacman can't reverse direction
                 if (Physics2D.Raycast(snappedPosition, dir, 1f, wallLayer))
                     continue;
+                if (Physics2D.Raycast(snappedPosition, dir, 1f, houseBorderLayer) && inHouse)
+                    continue;
 
                 var targetTile = snappedPosition + dir;
                 var distance = Vector2.Distance(targetTile, destination.position);
@@ -103,6 +111,8 @@ namespace F4B1.Core.Ghost
             {
                 if (dir == -currentDir) continue; // Pacman can't reverse direction
                 if (Physics2D.Raycast(snappedPosition, dir, 1f, wallLayer))
+                    continue;
+                if (Physics2D.Raycast(snappedPosition, dir, 1f, houseBorderLayer) && inHouse)
                     continue;
                 possibleDirections.Add(dir);
             }

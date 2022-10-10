@@ -11,11 +11,14 @@ namespace F4B1.Core.Ghost
 {
     public class RedGhost : Ghost
     {
-        private void Update()
+        protected override void Update()
         {
             if (dead) return;
-            var nearestPlayer = FindNearestPlayer();
+
+            var nearestPlayer = GetNearestPlayerPosition();
             destination.position = nearestPlayer;
+            
+            base.Update();
         }
     }
 }
