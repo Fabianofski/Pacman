@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/OrangeGhost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/OrangeGhost.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Board.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Board.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Board.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Board.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/board.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/board.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
