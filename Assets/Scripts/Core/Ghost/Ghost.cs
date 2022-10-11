@@ -62,7 +62,7 @@ namespace F4B1.Core.Ghost
             return new Vector2(Mathf.Round(vector.x * 10)/10, Mathf.Round(vector.y * 10)/10);
         }
 
-        private GameObject GetNearestPlayer()
+        protected GameObject GetNearestPlayer()
         {
             var closestDistance = Mathf.Infinity;
             GameObject nearestPlayer = null;
