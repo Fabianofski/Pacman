@@ -17,7 +17,7 @@ namespace F4B1.Core.Ghost
         private GameObject[] players;
         [SerializeField] private Transform spawn;
         [SerializeField] protected Transform destination;
-        [SerializeField] private Transform scatterPos;
+        [SerializeField] protected Transform scatterPos;
         [SerializeField] private Vector2 houseExitPos;
         [SerializeField] private int leaveHouseTime;
         protected GhostPathfinder pathfinder;

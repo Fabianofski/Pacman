@@ -17,8 +17,8 @@ namespace F4B1.Core.Ghost
             if (ghostState is "DEAD") return;
 
             var nearestPlayer = GetNearestPlayerPosition();
-            destination.position = nearestPlayer;
-            pathfinder.randomHeuristic = Vector2.Distance(transform.position, nearestPlayer) < 8;
+            destination.position = Vector2.Distance(transform.position, nearestPlayer) < 8
+                                    ? scatterPos.position : nearestPlayer;
             
             base.Update();
         }
