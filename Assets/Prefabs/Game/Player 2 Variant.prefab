@@ -32,6 +32,10 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6974359645118661182, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
+      propertyPath: itemMoveEffect
+      value: 
+      objectReference: {fileID: 11400000, guid: b57c9764ce21c4544b8ad2fd29d1442a, type: 2}
+    - target: {fileID: 6974359645118661182, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: moveInputAction.m_SingletonActionBindings.Array.data[1].m_Path
       value: <Keyboard>/upArrow
       objectReference: {fileID: 0}
@@ -97,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8864001614969794031, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: m_Name
-      value: Player 2
+      value: Player 2 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4254130916247040735, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}

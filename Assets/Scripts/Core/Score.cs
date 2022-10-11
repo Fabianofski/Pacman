@@ -14,15 +14,16 @@ namespace F4B1.Core
     {
 
         [SerializeField] private IntVariable score;
-
-
+        private PlayerMovement playerMovement;
+        
         private void Awake()
         {
+            playerMovement = GetComponent<PlayerMovement>();
             score.Reset();
         }
         public void CoinCollected(int i)
         {
-            score.Value += i;
+            score.Value += playerMovement.DoubleScore ? 2 * i : i;
         }
     }
 }

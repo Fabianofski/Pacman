@@ -612,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c623473efe8dc4a9eaaa5d14df5b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemMoveEffect: {fileID: 11400000, guid: bd95775d5604c1e41af86b2516f35c1e, type: 2}
   moveInputAction:
     m_Name: Move Input
     m_Type: 0
