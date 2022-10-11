@@ -63,7 +63,6 @@ namespace F4B1.Core.Ghost
                 if (!Physics2D.BoxCast(GetSnappedPosition() + dir, Vector2.one * .9f, 0, dir, 0, wallLayer))
                 {
                     possibleDir++;
-                    Debug.Log(dir);
                 }
             }
             return possibleDir >= 3;

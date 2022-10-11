@@ -51,6 +51,10 @@ PrefabInstance:
       propertyPath: moveInputAction.m_SingletonActionBindings.Array.data[4].m_Path
       value: <Keyboard>/rightArrow
       objectReference: {fileID: 0}
+    - target: {fileID: 7907453897191648046, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
+      propertyPath: selectedOption
+      value: 
+      objectReference: {fileID: 11400000, guid: 47edba57fedd86641aa65c9270def352, type: 2}
     - target: {fileID: 8864001614969794028, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: m_RootOrder
       value: 0

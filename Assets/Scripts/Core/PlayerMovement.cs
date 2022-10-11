@@ -19,6 +19,7 @@ namespace F4B1.Core
         private Rigidbody2D rb2d;
         private const float MoveSpeed = 5f;
         private Vector2 input;
+        public Vector2 Input => input;
         [SerializeField] private StringVariable itemMoveEffect;
         public bool PowerPellet { get; private set; }
         private bool pressed;

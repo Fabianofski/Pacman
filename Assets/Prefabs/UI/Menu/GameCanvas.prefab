@@ -919,6 +919,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 994002648705489325}
     m_Modifications:
+    - target: {fileID: 1698835565, guid: d00d330dce3c4d743a2c4f0b002378e2, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5795626516267540728, guid: d00d330dce3c4d743a2c4f0b002378e2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

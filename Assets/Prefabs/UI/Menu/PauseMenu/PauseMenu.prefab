@@ -68,7 +68,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME PAUSED
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3ce4a5f300d4bdc4aa47ecbd2c651958, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61470fad61ffd014db4930a25ef454b3, type: 2}
   m_sharedMaterial: {fileID: -5533899290557594104, guid: 3ce4a5f300d4bdc4aa47ecbd2c651958, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
