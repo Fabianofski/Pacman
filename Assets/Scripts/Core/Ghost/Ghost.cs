@@ -20,9 +20,10 @@ namespace F4B1.Core.Ghost
         [SerializeField] protected Transform scatterPos;
         [SerializeField] private Vector2 houseExitPos;
         [SerializeField] private int leaveHouseTime;
-        protected GhostPathfinder pathfinder;
+        private GhostPathfinder pathfinder;
         [SerializeField] protected string ghostState = "HOUSE";
         [SerializeField] private StringVariable globalGhostState;
+        [SerializeField] private GameObject ghostDieEffect;
         
         private void Awake()
         {
@@ -84,19 +85,24 @@ namespace F4B1.Core.Ghost
 
         private void OnTriggerEnter2D(Collider2D col)
         {
-            if (!col.CompareTag("Player")) return;
+            if (!col.CompareTag("Player") || ghostState == "DEAD") return;
 
             if (col.GetComponent<PlayerMovement>().PowerPellet)
-                Die();
+                Die(col.gameObject);
             else
                 col.GetComponent<Health>().Hit();
         }
 
-        private void Die()
+        private void Die(GameObject player)
         {
             ghostState = "DEAD";
             pathfinder.randomHeuristic = false;
             destination.position = spawn.position;
+            player.GetComponent<Score>().CoinCollected(200);
+            var score = Instantiate(ghostDieEffect, transform.position, Quaternion.identity);
+            Destroy(score, .5f);
+            LeanTween.value(player, 1, 0.2f, .5f).setOnUpdate((val) => Time.timeScale = val
+            ).setOnComplete(() => Time.timeScale = 1).setIgnoreTimeScale(true);
         }
 
         public void DoRespawn()

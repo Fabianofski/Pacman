@@ -72,6 +72,9 @@ namespace F4B1.Core
                 case "slow":
                     rb2d.velocity = input * 2f;
                     break;
+                default:
+                    rb2d.velocity = input * MoveSpeed;
+                    break;
             }           
         }
 

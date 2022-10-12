@@ -209,6 +209,7 @@ MonoBehaviour:
   leaveHouseTime: 0
   ghostState: HOUSE
   globalGhostState: {fileID: 11400000, guid: deb440367b7ad0a4792feeb3b1787474, type: 2}
+  ghostDieEffect: {fileID: 8518260035456985618, guid: 4b7030a01547af345bfe4a2ab09db7ef, type: 3}
 --- !u!114 &5522497224276478100
 MonoBehaviour:
   m_ObjectHideFlags: 0

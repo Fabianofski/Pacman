@@ -120,6 +120,7 @@ MonoBehaviour:
   leaveHouseTime: 5
   ghostState: HOUSE
   globalGhostState: {fileID: 11400000, guid: deb440367b7ad0a4792feeb3b1787474, type: 2}
+  ghostDieEffect: {fileID: 8518260035456985618, guid: 4b7030a01547af345bfe4a2ab09db7ef, type: 3}
 --- !u!4 &6560323947626617903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8264594526722040520, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
