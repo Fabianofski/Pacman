@@ -21,7 +21,7 @@ namespace F4B1.Core
         [SerializeField] private float invincibilityDuration = 1;
         [SerializeField] private int blinkRate = 4;
         
-        private void Awake()
+        private void Start()
         {
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             life.Reset();
@@ -41,6 +41,7 @@ namespace F4B1.Core
         {
             LeanTween.value(gameObject, 1, 0, invincibilityDuration / blinkRate).setOnUpdate((float val) =>
             {
+                if (!spriteRenderer) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
                 var col = spriteRenderer.color;
                 col.a = val;
                 spriteRenderer.color = col;

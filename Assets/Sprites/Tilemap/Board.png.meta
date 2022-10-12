@@ -1105,7 +1105,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1113,6 +1113,27 @@ TextureImporter:
       bones: []
       spriteID: 8f1cef2f36815cc46a279c44cc8baefc
       internalID: -15140471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Board_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc416e69c0d219d4791fbe9b91971e4d
+      internalID: -2034974423
       vertices: []
       indices: 
       edges: []
@@ -1157,6 +1178,7 @@ TextureImporter:
       Board_1: 358250591
       Board_4: -793831468
       IMG_0627_8: 1144502020
+      Board_9: -2034974423
       IMG_0627_7: -1858750422
       IMG_0627_10: 1254886371
       IMG_0627_2: -1599208140
