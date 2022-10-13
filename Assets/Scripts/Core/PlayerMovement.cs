@@ -18,11 +18,14 @@ namespace F4B1.Core
     {
         private Rigidbody2D rb2d;
         private const float MoveSpeed = 5f;
+        private Vector2 direction;
+        private int wallLayer;
         private Vector2 input;
-        public Vector2 Input => input;
+        public Vector2 Input => direction;
         [SerializeField] private StringVariable itemMoveEffect;
         public bool PowerPellet { get; private set; }
         private bool pressed;
+        private float timer;
         public bool DoubleScore { get; private set; }
         
         [SerializeField] private InputAction moveInputAction;
@@ -30,8 +33,17 @@ namespace F4B1.Core
         private void Awake()
         {
             this.rb2d = GetComponent<Rigidbody2D>();
-            moveInputAction.performed += _ => pressed = true;
+            moveInputAction.performed += _ => MoveBegin();
             moveInputAction.canceled += _ => pressed = false;
+            wallLayer = LayerMask.GetMask("Tilemap");
+
+        }
+
+        private void MoveBegin()
+        {
+            pressed = true;
+            timer = .5f;
+
         }
 
         private void OnEnable()
@@ -44,38 +56,51 @@ namespace F4B1.Core
             moveInputAction.Disable();
         }
 
-        public void Update()
+        private void HandleInput()
         {
-            if (!pressed) return;
-            input = moveInputAction.ReadValue<Vector2>();
+            timer -= Time.deltaTime;
+            if (pressed) input = moveInputAction.ReadValue<Vector2>();
+            if (timer < 0) return;
+            var offset = (itemMoveEffect.Value == "inverted" ? -input : input);
+            if (Physics2D.BoxCast(GetSnappedPosition() + offset, Vector2.one * .9f, 0, Vector2.zero, 0, wallLayer)) return;
+            direction = input;
         }
 
         public void FixedUpdate()
         {
+            HandleInput();
+
             DoubleScore = itemMoveEffect.Value == "double";
             PowerPellet = itemMoveEffect.Value == "power";
             
             switch(itemMoveEffect.Value)
             {
                 case "normal":
-                    rb2d.velocity = input * MoveSpeed;
+                    rb2d.velocity = direction * MoveSpeed;
                     break;
                 case "inverted":
-                    rb2d.velocity = input * -MoveSpeed;
+                    rb2d.velocity = direction * -MoveSpeed;
                     break;
                 case "frozen":
                     rb2d.velocity = Vector2.zero;
                     break;
                 case "fast":
-                    rb2d.velocity = input * 10f;
+                    rb2d.velocity = direction * 10f;
                     break;
                 case "slow":
-                    rb2d.velocity = input * 2f;
+                    rb2d.velocity = direction * 2f;
                     break;
                 default:
-                    rb2d.velocity = input * MoveSpeed;
+                    rb2d.velocity = direction * MoveSpeed;
                     break;
             }           
+        }
+
+        private Vector2 GetSnappedPosition()
+        {
+            var pos = transform.position;
+            pos = new Vector2(Mathf.Round(pos.x * 10) / 10, Mathf.Round(pos.y * 10) / 10);
+            return pos;
         }
 
         public void InvertControls(GameObject sender)
@@ -83,6 +108,7 @@ namespace F4B1.Core
             if (sender.name == gameObject.name) return;
             Debug.Log("invert " + gameObject.name);
             itemMoveEffect.Value = "inverted";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -91,6 +117,7 @@ namespace F4B1.Core
             if (sender.name == gameObject.name) return;
             Debug.Log("freeze " + gameObject.name);
             itemMoveEffect.Value = "frozen";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -99,6 +126,7 @@ namespace F4B1.Core
             if (sender.name == gameObject.name) return;
             Debug.Log("slow " + gameObject.name);
             itemMoveEffect.Value = "slow";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -107,6 +135,7 @@ namespace F4B1.Core
             if (sender.name != gameObject.name) return;
             Debug.Log("fast " + gameObject.name);
             itemMoveEffect.Value = "fast";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -115,6 +144,7 @@ namespace F4B1.Core
             if (sender.name != gameObject.name) return;
             Debug.Log("power " + gameObject.name);
             itemMoveEffect.Value = "power";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
@@ -123,6 +153,7 @@ namespace F4B1.Core
             if (sender.name != gameObject.name) return;
             Debug.Log("double " + gameObject.name);
             itemMoveEffect.Value = "double";
+            CancelInvoke();
             Invoke(nameof(ResetControls), 3f);
         }
 
