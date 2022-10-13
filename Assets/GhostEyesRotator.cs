@@ -28,8 +28,6 @@ namespace F4B1.Core.Ghost
             if (!ghostPathfinder) return;
             var dir = ghostPathfinder.currentDir;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            print(angle);
-           
             if (angle == 90)
             {
                 spriteRenderer.sprite = up;
