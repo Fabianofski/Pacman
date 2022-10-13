@@ -26,7 +26,7 @@ namespace F4B1.Core.Ghost
         private int houseBorderLayer;
         
         private readonly Vector2[] directions = new[] { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
-        private Vector2 currentDir = Vector2.up;
+        public Vector2 currentDir = Vector2.up;
         private bool justMadeDecision;
         
         private void Awake()
