@@ -17,6 +17,7 @@ namespace F4B1.Core.Ghost
     {
         [SerializeField] private Transform destination;
         [SerializeField] private int speed;
+        public float SpeedModifier = 1;
         public bool randomHeuristic;
         public bool inHouse = true;
         
@@ -44,7 +45,7 @@ namespace F4B1.Core.Ghost
         
         private void FixedUpdate()
         {
-            rb2d.velocity = currentDir * speed;
+            rb2d.velocity = currentDir * (speed * SpeedModifier);
             if (IsAtIntersection())
                 MakeTurn();
         }

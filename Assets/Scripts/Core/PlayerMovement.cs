@@ -8,6 +8,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityAtoms.BaseAtoms;
+using UnityEngine.Serialization;
 
 namespace F4B1.Core
 {
@@ -17,7 +18,7 @@ namespace F4B1.Core
     public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody2D rb2d;
-        private const float MoveSpeed = 5f;
+        [SerializeField] private float moveSpeed;
         private Vector2 direction;
         private int wallLayer;
         private Vector2 input;
@@ -76,10 +77,10 @@ namespace F4B1.Core
             switch(itemMoveEffect.Value)
             {
                 case "normal":
-                    rb2d.velocity = direction * MoveSpeed;
+                    rb2d.velocity = direction * moveSpeed;
                     break;
                 case "inverted":
-                    rb2d.velocity = direction * -MoveSpeed;
+                    rb2d.velocity = direction * -moveSpeed;
                     break;
                 case "frozen":
                     rb2d.velocity = Vector2.zero;
@@ -91,7 +92,7 @@ namespace F4B1.Core
                     rb2d.velocity = direction * 2f;
                     break;
                 default:
-                    rb2d.velocity = direction * MoveSpeed;
+                    rb2d.velocity = direction * moveSpeed;
                     break;
             }           
         }

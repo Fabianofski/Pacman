@@ -61,6 +61,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+  munchSound: {fileID: 11400000, guid: 5fbb023df8646624491d75e9ec81fdd9, type: 2}
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
 --- !u!61 &6366340531303306847
 BoxCollider2D:
   m_ObjectHideFlags: 0

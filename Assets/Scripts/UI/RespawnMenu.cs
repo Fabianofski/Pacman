@@ -6,6 +6,7 @@
 //  **/
 
 using System;
+using F4B1.Audio;
 using F4B1.Core;
 using TMPro;
 using UnityAtoms.BaseAtoms;
@@ -22,6 +23,9 @@ namespace F4B1.UI
         [SerializeField] private BoolVariable gameOver;
         [SerializeField] private GameObject respawnMenu;
         [SerializeField] private TextMeshProUGUI text;
+        
+        [SerializeField] private Sound gameOverSound;
+        [SerializeField] private SoundEvent soundEvent;
 
         private void Awake()
         {
@@ -31,17 +35,21 @@ namespace F4B1.UI
         public void Player1LivesChanged(int livesLeft)
         {
             if (livesLeft > 0) return;
-            respawnMenu.SetActive(true);
-            text.text = "PLAYER 1 DIED";
-            Time.timeScale = 0;
-            gameOver.Value = true;
+            LiveGameOver("PLAYER 1 DIED");
+
         }
         
         public void Player2LivesChanged(int livesLeft)
         {
             if (livesLeft > 0) return;
+            LiveGameOver("PLAYER 2 DIED");
+        }
+
+        private void LiveGameOver(string msg)
+        {
+            soundEvent.Raise(gameOverSound);
             respawnMenu.SetActive(true);
-            text.text = "PLAYER 2 DIED";
+            text.text = msg;
             Time.timeScale = 0;
             gameOver.Value = true;
         }

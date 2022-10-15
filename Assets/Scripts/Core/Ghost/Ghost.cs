@@ -6,6 +6,7 @@
 //  **/
 
 using System;
+using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityAtoms.FSM;
 using UnityEngine;
@@ -24,6 +25,8 @@ namespace F4B1.Core.Ghost
         [SerializeField] protected string ghostState = "HOUSE";
         [SerializeField] private StringVariable globalGhostState;
         [SerializeField] private GameObject ghostDieEffect;
+        [SerializeField] private Sound dieSound;
+        [SerializeField] private SoundEvent soundEvent;
         
         private void Awake()
         {
@@ -96,6 +99,8 @@ namespace F4B1.Core.Ghost
         private void Die(GameObject player)
         {
             ghostState = "DEAD";
+            pathfinder.SpeedModifier = 3;
+            soundEvent.Raise(dieSound);
             pathfinder.randomHeuristic = false;
             destination.position = spawn.position;
             player.GetComponent<Score>().CoinCollected(200);
@@ -106,7 +111,8 @@ namespace F4B1.Core.Ghost
         }
 
         public void DoRespawn()
-        {
+        {            
+            pathfinder.SpeedModifier = 1;
             Invoke(nameof(Respawn), 1f);
         }
 

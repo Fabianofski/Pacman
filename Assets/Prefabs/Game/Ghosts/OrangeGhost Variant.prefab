@@ -120,6 +120,8 @@ MonoBehaviour:
   ghostState: HOUSE
   globalGhostState: {fileID: 11400000, guid: deb440367b7ad0a4792feeb3b1787474, type: 2}
   ghostDieEffect: {fileID: 8518260035456985618, guid: 4b7030a01547af345bfe4a2ab09db7ef, type: 3}
+  dieSound: {fileID: 11400000, guid: c999c828d1632c44e85678ba56ff3745, type: 2}
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
 --- !u!4 &3462617504546476105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6560323947626617903, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}

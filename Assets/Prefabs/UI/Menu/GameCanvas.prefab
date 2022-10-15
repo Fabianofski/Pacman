@@ -320,6 +320,8 @@ MonoBehaviour:
   gameOver: {fileID: 11400000, guid: 36d16c06776204841af7a7d7d0690493, type: 2}
   respawnMenu: {fileID: 6836445941467979547}
   text: {fileID: 1967574038839360428}
+  gameOverSound: {fileID: 11400000, guid: 35d31149f3caf664e9dcff5997d4cf8d, type: 2}
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
 --- !u!114 &5707765441154580211
 MonoBehaviour:
   m_ObjectHideFlags: 0
