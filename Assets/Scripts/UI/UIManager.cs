@@ -45,6 +45,11 @@ namespace F4B1.UI
             Time.timeScale = pauseToggled.Value ? 0 : 1;
         }
 
+        public void UnPause()
+        {
+            Time.timeScale = pauseToggled.Value ? 0 : 1;
+        }
+
         public void LoadNextScene()
         {
             ResetAtoms();
