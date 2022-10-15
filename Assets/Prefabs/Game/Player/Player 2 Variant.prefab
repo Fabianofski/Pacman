@@ -25,11 +25,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 9ba13a8bb3644e74fbe08829759cbef6, type: 2}
     - target: {fileID: 3198578748416276905, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: spawnPoint.x
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3198578748416276905, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: spawnPoint.y
-      value: -10
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 6974359645118661182, guid: 87a50b9a1436e6847a990aa7a8ded9be, type: 3}
       propertyPath: itemMoveEffect
