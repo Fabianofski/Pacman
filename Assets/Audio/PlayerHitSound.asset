@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d9749b98ba7c442a19e82490997f36, type: 3}
   m_Name: PlayerHitSound
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 8ebaac6f7e8a49a4db272de4d0433d9e, type: 3}
+  clip: {fileID: 8300000, guid: 9683cb8dc21e1ec4485ee2ab77591e57, type: 3}
   outputAudioMixerGroup: {fileID: 24300002, guid: 71019aa9703cd684e9dee59de8d8c6d8, type: 2}
-  volume: 1
+  volume: 0.5
   dontDestroyOnLoad: 1
   destroySoundOnEvent: 0
   randomlyPitchSound: 0

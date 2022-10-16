@@ -94,7 +94,7 @@ MonoBehaviour:
   - name: double
     sprite: {fileID: 21300000, guid: 2b8a5ad81451e5b42be21d7342db5b6a, type: 3}
   - name: power
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 26cce217ac1211b4f9744453c73c8301, type: 3}
   - name: normal
     sprite: {fileID: 21300000, guid: 3eff5ecea57cd584d8e2f23a7fc58a82, type: 3}
   - name: inverted
