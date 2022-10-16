@@ -6,6 +6,8 @@
 //  **/
 
 using System;
+using EZCameraShake;
+using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -20,6 +22,8 @@ namespace F4B1.Core
         private SpriteRenderer spriteRenderer;
         [SerializeField] private float invincibilityDuration = 1;
         [SerializeField] private int blinkRate = 4;
+        [SerializeField] private SoundEvent soundEvent;
+        [SerializeField] private Sound hitSound;
         
         private void Start()
         {
@@ -30,6 +34,8 @@ namespace F4B1.Core
         public void Hit()
         {
             if (invincible) return;
+            CameraShaker.Instance.ShakeOnce(5, 0, .1f, .1f);
+            soundEvent.Raise(hitSound);
             life.Value--;
             invincible = true;
             Blink();

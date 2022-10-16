@@ -575,6 +575,8 @@ MonoBehaviour:
   spawnPoint: {x: -2, y: -7}
   invincibilityDuration: 1
   blinkRate: 4
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  hitSound: {fileID: 11400000, guid: 3db47a26c12785a4ab424e3eba3215bc, type: 2}
 --- !u!114 &4254130916247040735
 MonoBehaviour:
   m_ObjectHideFlags: 0

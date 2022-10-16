@@ -22,7 +22,7 @@ namespace F4B1.Core
         void OnTriggerEnter2D(Collider2D col)
         {
             if (!col.CompareTag("Player") || coinCollected) return;
-            //soundEvent.Raise(munchSound);
+            soundEvent.Raise(munchSound);
             coinCollected = true;
             col.GetComponent<Score>().CoinCollected(score);
             Destroy(gameObject);

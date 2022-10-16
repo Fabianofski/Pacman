@@ -48,6 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemEvent: {fileID: 11400000, guid: 6f779145cc2599744ac60cd39f1ec903, type: 2}
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  pickUpSound: {fileID: 11400000, guid: e8fffdd94b1682a4392b6383c2aaf092, type: 2}
 --- !u!114 &-5957714134309185828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed914337d6d34f4484cfd8e4902735b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
+  score: 50
   munchSound: {fileID: 11400000, guid: 5fbb023df8646624491d75e9ec81fdd9, type: 2}
   soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
 --- !u!61 &6366340531303306847

@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 6779245684423718264}
   - component: {fileID: 8264594527652632582}
   - component: {fileID: 3161201134425889520}
+  - component: {fileID: 4289381752048021799}
   m_Layer: 7
   m_Name: GhostGFX
   m_TagString: Ghost
@@ -388,6 +389,17 @@ MonoBehaviour:
     _eventInstancer: {fileID: 0}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+--- !u!210 &4289381752048021799
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8264594527652632576}
+  m_Enabled: 1
+  m_SortingLayerID: 1734517923
+  m_SortingLayer: 3
+  m_SortingOrder: 0
 --- !u!1 &8264594527827645442
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +509,7 @@ SpriteRenderer:
   m_SortingLayerID: 1734517923
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aacf3b29898a9ba4ba30b3bd456dc296, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81169ca030fcf934c836b86f76856f2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

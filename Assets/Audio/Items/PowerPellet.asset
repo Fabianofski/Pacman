@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f2d9749b98ba7c442a19e82490997f36, type: 3}
-  m_Name: MunchSound
+  m_Name: PowerPellet
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: fd6ea430dae445242884829f0957a509, type: 3}
+  clip: {fileID: 8300000, guid: d0bc735b6eafae14fb50fb11607d0dd2, type: 3}
   outputAudioMixerGroup: {fileID: 24300002, guid: 71019aa9703cd684e9dee59de8d8c6d8, type: 2}
-  volume: 0.6
-  dontDestroyOnLoad: 0
+  volume: 0.5
+  dontDestroyOnLoad: 1
   destroySoundOnEvent: 0
   randomlyPitchSound: 0
   pitchBounds: {x: 1, y: 1}
