@@ -147,6 +147,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7948355030795359164}
     m_Modifications:
+    - target: {fileID: 682864325337940545, guid: 45a7c0babc6290648b2b4123fdeeb364, type: 3}
+      propertyPath: effects.Array.data[6].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee6fdf4211173d46b1d506b15dcc4fd, type: 3}
     - target: {fileID: 682864325337940573, guid: 45a7c0babc6290648b2b4123fdeeb364, type: 3}
       propertyPath: m_Name
       value: Effect P1
