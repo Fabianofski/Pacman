@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Atoms/OptionSelector/MapList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Atoms/OptionSelector/MapList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Coin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilemap/Palette.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,7 @@
       <workItem from="1665853392086" duration="3573000" />
       <workItem from="1665914655561" duration="1672000" />
       <workItem from="1665951960453" duration="1349000" />
-      <workItem from="1665998895441" duration="662000" />
+      <workItem from="1665998895441" duration="1291000" />
     </task>
     <servers />
   </component>

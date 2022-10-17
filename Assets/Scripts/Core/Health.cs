@@ -17,7 +17,7 @@ namespace F4B1.Core
     {
 
         [SerializeField] private IntVariable life;
-        [SerializeField] private Vector2 spawnPoint;
+        private Vector2 spawnPoint;
         private bool invincible;
         private SpriteRenderer spriteRenderer;
         [SerializeField] private float invincibilityDuration = 1;
@@ -29,6 +29,7 @@ namespace F4B1.Core
         {
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
             life.Reset();
+            spawnPoint = transform.position;
         }
 
         public void Hit()

@@ -19,3 +19,5 @@ MonoBehaviour:
   Removed: {fileID: 0}
   list:
   - {fileID: 7509823752539767990, guid: a71b9ecfe037ff149abcabf523f193f8, type: 3}
+  - {fileID: 7509823752539767990, guid: 1ba2aceccf384ae4f842dc66518b9d12, type: 3}
+  - {fileID: 7509823752539767990, guid: 04373508c8b15d541b2341f608f9cc43, type: 3}
