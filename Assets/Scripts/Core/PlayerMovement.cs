@@ -19,7 +19,8 @@ namespace F4B1.Core
     public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody2D rb2d;
-        [SerializeField] private float moveSpeed;
+        [SerializeField] private FloatVariable moveSpeed;
+        [SerializeField] private FloatVariable itemEffectDuration;
         private Vector2 direction;
         private int wallLayer;
         private Vector2 input;
@@ -81,10 +82,10 @@ namespace F4B1.Core
             switch(itemMoveEffect.Value)
             {
                 case "normal":
-                    rb2d.velocity = direction * moveSpeed;
+                    rb2d.velocity = direction * moveSpeed.Value;
                     break;
                 case "inverted":
-                    rb2d.velocity = direction * -moveSpeed;
+                    rb2d.velocity = direction * -moveSpeed.Value;
                     break;
                 case "frozen":
                     rb2d.velocity = Vector2.zero;
@@ -96,7 +97,7 @@ namespace F4B1.Core
                     rb2d.velocity = direction * 2f;
                     break;
                 default:
-                    rb2d.velocity = direction * moveSpeed;
+                    rb2d.velocity = direction * moveSpeed.Value;
                     break;
             }           
         }
@@ -114,7 +115,7 @@ namespace F4B1.Core
             Debug.Log("invert " + gameObject.name);
             itemMoveEffect.Value = "inverted";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         public void FreezeControls(GameObject sender)
@@ -123,7 +124,7 @@ namespace F4B1.Core
             Debug.Log("freeze " + gameObject.name);
             itemMoveEffect.Value = "frozen";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         public void SlowControls(GameObject sender)
@@ -132,7 +133,7 @@ namespace F4B1.Core
             Debug.Log("slow " + gameObject.name);
             itemMoveEffect.Value = "slow";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         public void FastControls(GameObject sender)
@@ -141,7 +142,7 @@ namespace F4B1.Core
             Debug.Log("fast " + gameObject.name);
             itemMoveEffect.Value = "fast";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         public void Power(GameObject sender)
@@ -150,7 +151,7 @@ namespace F4B1.Core
             Debug.Log("power " + gameObject.name);
             itemMoveEffect.Value = "power";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         public void Double(GameObject sender)
@@ -159,7 +160,7 @@ namespace F4B1.Core
             Debug.Log("double " + gameObject.name);
             itemMoveEffect.Value = "double";
             CancelInvoke();
-            Invoke(nameof(ResetControls), 3f);
+            Invoke(nameof(ResetControls), itemEffectDuration.Value);
         }
 
         private void ResetControls()

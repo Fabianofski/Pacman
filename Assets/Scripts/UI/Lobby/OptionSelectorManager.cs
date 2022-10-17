@@ -9,7 +9,7 @@ using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace F4B1.UI
+namespace F4B1.UI.Lobby
 {
     public class OptionSelectorManager : MonoBehaviour
     {

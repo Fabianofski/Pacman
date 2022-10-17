@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf8a67b68db3d4650908f8cf6adeda60, type: 3}
-  m_Name: Player1Skin
+  m_Name: SelectedDifficulty
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: 7
-  _changed: {fileID: 11400000, guid: 20f681cab8dee3744ba0e2cc610e5d49, type: 2}
+  _value: 1
+  _changed: {fileID: 11400000, guid: 657f816c003b9fe49b3c8169a656b8d2, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 8
-  _initialValue: 3
+  _oldValue: 0
+  _initialValue: 0
   _preChangeTransformers: []

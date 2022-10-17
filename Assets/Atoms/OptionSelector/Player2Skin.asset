@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _developerDescription: 
   _id: 
-  _value: 0
-  _changed: {fileID: 0}
+  _value: 8
+  _changed: {fileID: 11400000, guid: aa45526921e27924dbb5f5ffe10318c9, type: 2}
   _changedWithHistory: {fileID: 0}
   _triggerChangedOnOnEnable: 0
   _triggerChangedWithHistoryOnOnEnable: 0
-  _oldValue: 0
+  _oldValue: 7
   _initialValue: 0
   _preChangeTransformers: []

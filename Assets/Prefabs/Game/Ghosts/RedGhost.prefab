@@ -227,8 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 8264594526722040520}
-  speed: 2
-  SpeedModifier: 1
+  speed: {fileID: 11400000, guid: fe44abd64f04592499e228626053a951, type: 2}
+  speedModifier: 1
   randomHeuristic: 0
   inHouse: 1
   currentDir: {x: 0, y: 1}

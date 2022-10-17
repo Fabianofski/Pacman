@@ -2,12 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DifficultySetting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Core/DifficultySetting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/DifficultySwitcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/DifficultySwitcher.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Ms. Pacman (1).unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Ms. Pacman (1).unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Player/Player 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Player/Player 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OptionSelector/LobbyCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/OptionSelector/LobbyCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/Ghost.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostPathfinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostPathfinder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioSlider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/AudioSlider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AudioSlider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/AudioSlider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/EffectDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/EffectDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/EffectDisplay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/EffectDisplay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthUIUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/HealthUIUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/HealthUIUpdater.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/HealthUIUpdater.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/IntTextUpdater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/IntTextUpdater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/IntTextUpdater.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/IntTextUpdater.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OptionSelectorManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/OptionSelectorManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OptionSelectorManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/OptionSelectorManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OptionSwitcher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/OptionSwitcher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OptionSwitcher.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Lobby/OptionSwitcher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ReadyScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/ReadyScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ReadyScreen.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/ReadyScreen.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/RespawnMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Game/RespawnMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/SelectionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/SelectionManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/SelectionManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TweenIn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/TweenIn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/TweenIn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/TweenIn.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Generic/UIManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/UI.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/UI.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +120,7 @@
       <workItem from="1665914655561" duration="1672000" />
       <workItem from="1665951960453" duration="1349000" />
       <workItem from="1665998895441" duration="2244000" />
+      <workItem from="1666034193322" duration="3281000" />
     </task>
     <servers />
   </component>

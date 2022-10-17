@@ -8,7 +8,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Game
 {
     public class IntTextUpdater : MonoBehaviour
     {

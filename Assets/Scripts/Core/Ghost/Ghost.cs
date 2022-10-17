@@ -99,7 +99,7 @@ namespace F4B1.Core.Ghost
         private void Die(GameObject player)
         {
             ghostState = "DEAD";
-            pathfinder.SpeedModifier = 3;
+            pathfinder.speedModifier = 3;
             soundEvent.Raise(dieSound);
             pathfinder.randomHeuristic = false;
             destination.position = spawn.position;
@@ -112,7 +112,7 @@ namespace F4B1.Core.Ghost
 
         public void DoRespawn()
         {            
-            pathfinder.SpeedModifier = 1;
+            pathfinder.speedModifier = 1;
             Invoke(nameof(Respawn), 1f);
         }
 

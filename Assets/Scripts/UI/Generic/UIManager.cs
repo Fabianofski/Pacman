@@ -11,7 +11,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-namespace F4B1.UI
+namespace F4B1.UI.Generic
 {
     public class UIManager : MonoBehaviour
     {

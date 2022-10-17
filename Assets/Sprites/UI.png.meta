@@ -695,7 +695,7 @@ TextureImporter:
         width: 70
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -716,7 +716,7 @@ TextureImporter:
         width: 70
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -737,7 +737,7 @@ TextureImporter:
         width: 70
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,6 +745,69 @@ TextureImporter:
       bones: []
       spriteID: 14a42c6b6cb6feb45a1beb674f07dd94
       internalID: -391928234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cog
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339fe9032f6eba54aa45c3e0b8cea283
+      internalID: -349769724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cog_selected
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c727cd64c69284b809b5a8272b5ce1
+      internalID: -769436504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cog_clicked
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaabaf9b4e58174bb6d107fadd5399d
+      internalID: -844494709
       vertices: []
       indices: 
       edges: []
@@ -773,11 +836,14 @@ TextureImporter:
       Arrow: -1887602441
       Handle: 1683934999
       Arrow_Clicked: 1420922020
+      cog_selected: -769436504
       Handle_Clicked: 1227006927
       Restart: -1828370514
       Continue_Selected: 705963678
       Options_Selected: 110380096
       Restart_Clicked: -391928234
+      cog_clicked: -844494709
+      cog: -349769724
       Quit_Clicked: -696550191
       Options: 55269697
       Slider_BG: 1200817434

@@ -8,7 +8,7 @@ using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Generic
 {
     public class TweenIn : MonoBehaviour
     {

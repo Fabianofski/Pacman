@@ -508,7 +508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c623473efe8dc4a9eaaa5d14df5b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
+  moveSpeed: {fileID: 11400000, guid: 8aaded6799e12b24da101891016c9d1d, type: 2}
+  itemEffectDuration: {fileID: 11400000, guid: 648baf120fa607247827a0d7d2d19ad3, type: 2}
   itemMoveEffect: {fileID: 11400000, guid: bd95775d5604c1e41af86b2516f35c1e, type: 2}
   moveInputAction:
     m_Name: Move Input

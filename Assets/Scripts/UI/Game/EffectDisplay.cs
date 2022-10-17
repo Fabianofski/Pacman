@@ -7,12 +7,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace F4B1.UI
+namespace F4B1.UI.Game
 {
     public class EffectDisplay : MonoBehaviour
     {

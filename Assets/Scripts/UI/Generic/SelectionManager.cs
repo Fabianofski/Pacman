@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-namespace F4B1.UI
+namespace F4B1.UI.Generic
 {
     public class SelectionManager : MonoBehaviour
     {

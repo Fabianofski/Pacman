@@ -18,8 +18,8 @@ namespace F4B1.Core.Ghost
     public class GhostPathfinder : MonoBehaviour
     {
         [SerializeField] private Transform destination;
-        [SerializeField] private int speed;
-        public float SpeedModifier = 1;
+        [SerializeField] private FloatVariable speed;
+        [HideInInspector] public float speedModifier = 1;
         public bool randomHeuristic;
         public bool inHouse = true;
         
@@ -50,7 +50,7 @@ namespace F4B1.Core.Ghost
         
         private void FixedUpdate()
         {
-            rb2d.velocity = currentDir * (speed * SpeedModifier);
+            rb2d.velocity = currentDir * (speed.Value * speedModifier);
             if (IsAtIntersection())
                 MakeTurn();
         }

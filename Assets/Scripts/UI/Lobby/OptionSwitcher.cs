@@ -5,12 +5,10 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
-using Unity.Mathematics;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Lobby
 {
     public class OptionSwitcher : MonoBehaviour
     {

@@ -5,14 +5,13 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
 using F4B1.Audio;
 using F4B1.Core;
 using TMPro;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.UI
+namespace F4B1.UI.Game
 {
     public class RespawnMenu : MonoBehaviour
     {

@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace F4B1.UI
+namespace F4B1.UI.Game
 {
     public class ReadyScreen : MonoBehaviour
     {
