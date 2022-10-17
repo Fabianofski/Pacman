@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5efcdede-6dc3-4918-850f-ea33bb2b780c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pacman/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/MunchSound.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/MunchSound.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GhostEyesRotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostEyesRotator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GhostEyesRotator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Ghost/GhostEyesRotator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Ghosts/RedGhost.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/2x Score.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/2x Score.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FastItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/FreezeItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/InvertItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/PowerPellet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/PowerPellet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/SlowItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Items/SlowItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game/Player/Player 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game/Player/Player 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Coin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Item.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RespawnMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +82,7 @@
       <workItem from="1665853392086" duration="3573000" />
       <workItem from="1665914655561" duration="1672000" />
       <workItem from="1665951960453" duration="1349000" />
+      <workItem from="1665998895441" duration="662000" />
     </task>
     <servers />
   </component>

@@ -24,7 +24,8 @@ namespace F4B1.UI
         [SerializeField] private GameObject respawnMenu;
         [SerializeField] private TextMeshProUGUI text;
         
-        [SerializeField] private Sound gameOverSound;
+        [SerializeField] private Sound deathGameOverSound;
+        [SerializeField] private Sound coinGameOverSound;
         [SerializeField] private SoundEvent soundEvent;
 
         private void Awake()
@@ -47,7 +48,7 @@ namespace F4B1.UI
 
         private void LiveGameOver(string msg)
         {
-            soundEvent.Raise(gameOverSound);
+            soundEvent.Raise(deathGameOverSound);
             respawnMenu.SetActive(true);
             text.text = msg;
             Time.timeScale = 0;
@@ -59,6 +60,7 @@ namespace F4B1.UI
             var coins = FindObjectsOfType<Coin>();
             if (coins.Length > 1) return;
             
+            soundEvent.Raise(coinGameOverSound);
             respawnMenu.SetActive(true);
             text.text = player1Coins.Value > player2Coins.Value ? "PLAYER 1 Won" : "PLAYER 2 Won";
             Time.timeScale = 0;
