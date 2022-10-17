@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d9749b98ba7c442a19e82490997f36, type: 3}
   m_Name: MunchSound
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: a9d0448321b7eae48a846b58e6d03e43, type: 3}
+  clip: {fileID: 8300000, guid: 7cc2f0025c1f9bc4e9e76bb24524c48d, type: 3}
   outputAudioMixerGroup: {fileID: 24300002, guid: 71019aa9703cd684e9dee59de8d8c6d8, type: 2}
-  volume: 0.3
+  volume: 0.5
   dontDestroyOnLoad: 0
   destroySoundOnEvent: 0
   randomlyPitchSound: 1
