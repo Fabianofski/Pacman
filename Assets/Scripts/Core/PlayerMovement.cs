@@ -5,6 +5,7 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using F4B1.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityAtoms.BaseAtoms;
@@ -30,6 +31,9 @@ namespace F4B1.Core
         public bool DoubleScore { get; private set; }
         
         [SerializeField] private InputAction moveInputAction;
+        
+        [SerializeField] private SoundEvent soundEvent;
+        [SerializeField] private Sound turnSound;
 
         private void Awake()
         {
@@ -44,7 +48,6 @@ namespace F4B1.Core
         {
             pressed = true;
             timer = .5f;
-
         }
 
         private void OnEnable()
@@ -64,6 +67,7 @@ namespace F4B1.Core
             if (timer < 0) return;
             var offset = (itemMoveEffect.Value == "inverted" ? -input : input);
             if (Physics2D.BoxCast(GetSnappedPosition() + offset, Vector2.one * .9f, 0, Vector2.zero, 0, wallLayer)) return;
+            if (direction != input) soundEvent.Raise(turnSound);
             direction = input;
         }
 

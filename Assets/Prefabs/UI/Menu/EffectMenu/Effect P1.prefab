@@ -104,7 +104,7 @@ MonoBehaviour:
   - name: fast
     sprite: {fileID: 21300000, guid: efd5dd5f0f224b048828c8d6d93e95f8, type: 3}
   - name: slow
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 4ee6fdf4211173d46b1d506b15dcc4fd, type: 3}
 --- !u!114 &682864325337940546
 MonoBehaviour:
   m_ObjectHideFlags: 0

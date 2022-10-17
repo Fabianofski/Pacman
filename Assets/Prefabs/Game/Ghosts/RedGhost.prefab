@@ -232,6 +232,8 @@ MonoBehaviour:
   randomHeuristic: 0
   inHouse: 1
   currentDir: {x: 0, y: 1}
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  turnSound: {fileID: 11400000, guid: c7bbd87561a4023409fd96aede73bab3, type: 2}
 --- !u!61 &8892382020372695107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -509,7 +511,7 @@ SpriteRenderer:
   m_SortingLayerID: 1734517923
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c227d1b6b0e95704fba7a4ffc1dde22e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81169ca030fcf934c836b86f76856f2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

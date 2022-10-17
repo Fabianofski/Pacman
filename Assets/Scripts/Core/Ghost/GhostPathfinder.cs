@@ -8,6 +8,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using F4B1.Audio;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -29,6 +31,9 @@ namespace F4B1.Core.Ghost
         private readonly Vector2[] directions = new[] { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
         public Vector2 currentDir = Vector2.up;
         private bool justMadeDecision;
+        
+        [SerializeField] private SoundEvent soundEvent;
+        [SerializeField] private Sound turnSound;
         
         private void Awake()
         {
@@ -72,6 +77,8 @@ namespace F4B1.Core.Ghost
         private void MakeTurn()
         {
             if (justMadeDecision) return;
+            
+            soundEvent.Raise(turnSound);
             
             var snappedPosition = GetSnappedPosition();
             var nextDir = randomHeuristic ? GetRandomTile(snappedPosition) : GetClosestTile(snappedPosition);

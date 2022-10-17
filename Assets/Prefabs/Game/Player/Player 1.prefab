@@ -559,6 +559,8 @@ MonoBehaviour:
       m_Action: Move Input
       m_Flags: 8
     m_Flags: 0
+  soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
+  turnSound: {fileID: 11400000, guid: 073bb99aaebb30f4e896e3ace2eb1d42, type: 2}
 --- !u!114 &3198578748416276905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,7 +574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: {fileID: 11400000, guid: cb0c8baeab0fac14f93065678beb06cd, type: 2}
-  spawnPoint: {x: -2, y: -7}
   invincibilityDuration: 1
   blinkRate: 4
   soundEvent: {fileID: 11400000, guid: ca1eca7eb3b3c154293af562b7eb9d9a, type: 2}
