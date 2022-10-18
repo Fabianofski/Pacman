@@ -5,8 +5,6 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
-using TreeEditor;
 using UnityEngine;
 
 namespace F4B1.Core

@@ -71,6 +71,7 @@ namespace F4B1.Core.Ghost
                     possibleDir++;
                 }
             }
+            Debug.Log(possibleDir);
             return possibleDir >= 3;
         }
         
