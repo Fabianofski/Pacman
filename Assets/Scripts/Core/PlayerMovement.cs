@@ -42,7 +42,7 @@ namespace F4B1.Core
             moveInputAction.performed += _ => MoveBegin();
             moveInputAction.canceled += _ => pressed = false;
             wallLayer = LayerMask.GetMask("Tilemap");
-
+            itemMoveEffect.Reset();
         }
 
         private void MoveBegin()
