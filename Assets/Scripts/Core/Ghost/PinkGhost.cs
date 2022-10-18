@@ -5,6 +5,7 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using System;
 using UnityEngine;
 
 namespace F4B1.Core.Ghost
@@ -12,12 +13,18 @@ namespace F4B1.Core.Ghost
     public class PinkGhost : Ghost
     {
         
+		private Vector2 targetTile;
+		
         protected override void Update()
         {
             if (ghostState is "DEAD") return;
 
-            var nearestPlayer = GetNearestPlayerPosition();
-            destination.position = nearestPlayer;
+            var nearestPlayer = GetNearestPlayer();
+			var playerDirection = nearestPlayer.GetComponent<Rigidbody2D>().velocity.normalized;
+			targetTile = (Vector2) nearestPlayer.transform.position + playerDirection * 4;
+			
+			
+            destination.position = targetTile;
             
             base.Update();
         }
