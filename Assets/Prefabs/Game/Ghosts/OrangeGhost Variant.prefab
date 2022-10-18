@@ -23,9 +23,13 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5230923544345977599}
+    - target: {fileID: 4978480579640110663, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170405, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_Name
-      value: OrangeGhost Variant
+      value: OrangeGhost
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_RootOrder

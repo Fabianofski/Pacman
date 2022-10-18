@@ -1,10 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TreeEditor;
-using System.Diagnostics;
+// /**
+//  * This file is part of: Pacman
+//  * Created: 23.09.2022
+//  * Copyright (C) 2022 Amelia Witon
+//  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
+//  **/
+
 using UnityEngine;
-using System.Runtime.InteropServices;
 
 namespace F4B1.Core.Ghost
 {
