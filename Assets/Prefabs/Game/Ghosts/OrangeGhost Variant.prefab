@@ -11,6 +11,18 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5230923544345977599}
+    - target: {fileID: 1137683270774034328, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: ghostColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137683270774034328, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: ghostColor.g
+      value: 0.57254905
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137683270774034328, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
+      propertyPath: ghostColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3007084244281703153, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10
@@ -29,7 +41,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170405, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_Name
-      value: OrangeGhost
+      value: OrangeGhost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6560323946589170406, guid: 0cb6321cdbf4ef549863886960a522cc, type: 3}
       propertyPath: m_RootOrder

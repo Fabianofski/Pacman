@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462617503440610947, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
       propertyPath: m_Name
-      value: PinkGhost
+      value: PinkGhost Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3462617503601142407, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
       propertyPath: m_Color.b
@@ -87,6 +87,14 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1844530740086663315}
+    - target: {fileID: 7263918557600875518, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: ghostColor.b
+      value: 0.81960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263918557600875518, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
+      propertyPath: ghostColor.g
+      value: 0.36078432
+      objectReference: {fileID: 0}
     - target: {fileID: 7593872747620018289, guid: 74b3c86e048348f4fb5a3c4e7397ca8f, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

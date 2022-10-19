@@ -53,7 +53,7 @@ namespace F4B1.Core.Ghost
             }
         }
 
-        private bool GhostIsFrightened()
+        public bool GhostIsFrightened()
         {
             var playerHasPowerPellet = GetNearestPlayer().GetComponent<PlayerMovement>().PowerPellet;
             var frightened = playerHasPowerPellet && ghostState is "SCATTER" or "CHASE";

@@ -19,6 +19,14 @@ PrefabInstance:
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2646841343982147979}
+    - target: {fileID: 2770439277937848703, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
+      propertyPath: ghostColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770439277937848703, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
+      propertyPath: ghostColor.r
+      value: 0.12156863
+      objectReference: {fileID: 0}
     - target: {fileID: 3161201134425889520, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: _unityEventResponse.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -89,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8264594527827645442, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
       propertyPath: m_Name
-      value: BlueGhost
+      value: BlueGhost Variant
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 445171788190548940, guid: 85daa896087d78c4e9a9c903df310629, type: 3}
