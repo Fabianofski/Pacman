@@ -31,10 +31,9 @@ namespace F4B1.Core.Ghost
         void Update()
         {
             if (!ghost) return;
-            if (ghost.GhostIsFrightened())
+            if (ghost.GhostIsFrightened() && ghost.ghostState != "DEAD")
             {
                 spriteRenderer.sprite = frightened;
-               
             }
             else
             {    if (!ghostPathfinder) return;

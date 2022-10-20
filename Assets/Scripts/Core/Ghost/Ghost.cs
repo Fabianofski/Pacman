@@ -22,7 +22,7 @@ namespace F4B1.Core.Ghost
         [SerializeField] private Vector2 houseExitPos;
         [SerializeField] private int leaveHouseTime;
         private GhostPathfinder pathfinder;
-        [SerializeField] protected string ghostState = "HOUSE";
+        [SerializeField] public string ghostState = "HOUSE";
         [SerializeField] private StringVariable globalGhostState;
         [SerializeField] private GameObject ghostDieEffect;
         [SerializeField] private Sound dieSound;

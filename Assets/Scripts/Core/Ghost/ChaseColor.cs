@@ -20,7 +20,7 @@ namespace F4B1.Core.Ghost
         void Update()
         {
             if (!ghost) return;
-            Debug.Log(ghost.GhostIsFrightened());
+            spriteRenderer.enabled = ghost.ghostState != "DEAD";
             spriteRenderer.color = ghost.GhostIsFrightened() ? frightenedColor : ghostColor;
         }
 
