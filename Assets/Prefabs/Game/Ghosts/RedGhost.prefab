@@ -416,8 +416,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8264594527652632582}
-  ghostColor: {r: 1, g: 0, b: 0, a: 0}
-  frightenedColor: {r: 0.20803666, g: 0.24243557, b: 0.5188679, a: 0}
+  ghostColor: {r: 1, g: 0, b: 0, a: 1}
+  frightenedColor: {r: 0.20803666, g: 0.24243557, b: 0.5188679, a: 1}
 --- !u!1 &8264594527827645442
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,8 +462,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3137052174192386085}
-  - component: {fileID: 3482885217240343750}
   - component: {fileID: 5484085924867293163}
+  - component: {fileID: 8264594527280592022}
   m_Layer: 0
   m_Name: Eyes
   m_TagString: Untagged
@@ -479,14 +479,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8352055003122741502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.107, y: -0.053, z: -1.9961343}
+  m_LocalPosition: {x: 0.085, y: -0.062, z: -1.9961343}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8264594527652632583}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3482885217240343750
+--- !u!114 &5484085924867293163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8352055003122741502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31049a97304b654b875ba5a963b4d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 8264594527280592022}
+  up: {fileID: 21300000, guid: a2efbf225eb227b4c96c23df69d216a1, type: 3}
+  down: {fileID: 21300000, guid: 81169ca030fcf934c836b86f76856f2c, type: 3}
+  left: {fileID: 21300000, guid: c227d1b6b0e95704fba7a4ffc1dde22e, type: 3}
+  right: {fileID: 21300000, guid: aacf3b29898a9ba4ba30b3bd456dc296, type: 3}
+  frightened: {fileID: 21300000, guid: fe4186a993d279344a7c5fa771fb72ad, type: 3}
+--- !u!212 &8264594527280592022
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,7 +545,7 @@ SpriteRenderer:
   m_SortingLayerID: 1734517923
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c227d1b6b0e95704fba7a4ffc1dde22e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81169ca030fcf934c836b86f76856f2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -538,20 +556,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5484085924867293163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8352055003122741502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e31049a97304b654b875ba5a963b4d18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 3482885217240343750}
-  up: {fileID: 21300000, guid: a2efbf225eb227b4c96c23df69d216a1, type: 3}
-  down: {fileID: 21300000, guid: 81169ca030fcf934c836b86f76856f2c, type: 3}
-  left: {fileID: 21300000, guid: c227d1b6b0e95704fba7a4ffc1dde22e, type: 3}
-  right: {fileID: 21300000, guid: aacf3b29898a9ba4ba30b3bd456dc296, type: 3}

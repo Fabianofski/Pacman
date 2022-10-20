@@ -13,23 +13,15 @@ namespace F4B1.Core.Ghost
         // Start is called before the first frame update
         void Awake()
         {
-            ghost = transform.parent.GetComponent<Ghost>();
+            ghost = GetComponent<Ghost>();
         }
 
         // Update is called once per frame
         void Update()
         {
             if (!ghost) return;
-            if (ghost.GhostIsFrightened())
-            {
-                spriteRenderer.color = frightenedColor;
-            }
-            else {
-                spriteRenderer.color = ghostColor;
-            }
-
-
-
+            Debug.Log(ghost.GhostIsFrightened());
+            spriteRenderer.color = ghost.GhostIsFrightened() ? frightenedColor : ghostColor;
         }
 
     }
