@@ -57,7 +57,6 @@ namespace F4B1.Core.Ghost
         {
             var playerHasPowerPellet = GetNearestPlayer().GetComponent<PlayerMovement>().PowerPellet;
             var frightened = playerHasPowerPellet && ghostState is "SCATTER" or "CHASE";
-            if (frightened && !pathfinder.randomHeuristic) pathfinder.ReverseDirection();
             return frightened;
         }
 
