@@ -10,7 +10,7 @@ using System.Collections.Generic;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Behaviour
 {
     public class GhostWaveManager : MonoBehaviour
     {

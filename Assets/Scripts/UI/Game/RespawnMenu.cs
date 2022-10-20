@@ -7,6 +7,7 @@
 
 using F4B1.Audio;
 using F4B1.Core;
+using F4B1.Core.Collectable;
 using TMPro;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;

@@ -7,7 +7,7 @@
 
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Player
 {
     public class PlayerSpriteRotator : MonoBehaviour
     {

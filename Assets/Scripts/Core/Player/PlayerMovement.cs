@@ -6,12 +6,11 @@
 //  **/
 
 using F4B1.Audio;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityAtoms.BaseAtoms;
-using UnityEngine.Serialization;
 
-namespace F4B1.Core
+namespace F4B1.Core.Player
 {
 
 [RequireComponent(typeof(Rigidbody2D))]

@@ -5,13 +5,12 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
 using EZCameraShake;
 using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Player
 {
     public class Health : MonoBehaviour
     {

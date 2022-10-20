@@ -5,10 +5,11 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
+using F4B1.Core.Player;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Collectable
 {
     public class Score : MonoBehaviour
     {

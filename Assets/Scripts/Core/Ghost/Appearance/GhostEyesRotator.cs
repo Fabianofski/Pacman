@@ -5,14 +5,14 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System.Configuration;
+using F4B1.Core.Ghost.Behaviour;
 using UnityEngine;
 
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Appearance
 {
     public class GhostEyesRotator : MonoBehaviour
     {
-        private Ghost ghost;
+        private Behaviour.Ghost ghost;
         private GhostPathfinder ghostPathfinder;
         public SpriteRenderer spriteRenderer;
         public Sprite up;
@@ -24,7 +24,7 @@ namespace F4B1.Core.Ghost
         void Awake()
         {
             ghostPathfinder = transform.parent.GetComponent<GhostPathfinder>();
-            ghost = transform.parent.GetComponent<Ghost>();
+            ghost = transform.parent.GetComponent<Behaviour.Ghost>();
         }
 
         // Update is called once per frame

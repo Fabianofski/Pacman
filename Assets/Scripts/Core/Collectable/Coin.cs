@@ -9,7 +9,7 @@ using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace F4B1.Core
+namespace F4B1.Core.Collectable
 {
     public class Coin : MonoBehaviour
     {

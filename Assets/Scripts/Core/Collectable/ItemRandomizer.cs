@@ -1,8 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace F4B1
+namespace F4B1.Core.Collectable
 {
     public class ItemRandomizer : MonoBehaviour
     {

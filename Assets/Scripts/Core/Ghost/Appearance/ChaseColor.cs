@@ -1,19 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Appearance
 {
     public class ChaseColor : MonoBehaviour
     {
-        private Ghost ghost;
+        private Behaviour.Ghost ghost;
         public SpriteRenderer spriteRenderer;
         public Color ghostColor;
         public Color frightenedColor; 
         // Start is called before the first frame update
         void Awake()
         {
-            ghost = GetComponent<Ghost>();
+            ghost = GetComponent<Behaviour.Ghost>();
         }
 
         // Update is called once per frame

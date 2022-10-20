@@ -5,13 +5,13 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
 using F4B1.Audio;
+using F4B1.Core.Collectable;
+using F4B1.Core.Player;
 using UnityAtoms.BaseAtoms;
-using UnityAtoms.FSM;
 using UnityEngine;
 
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Behaviour
 {
     public abstract class Ghost : MonoBehaviour
     {

@@ -5,15 +5,13 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using F4B1.Audio;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Behaviour
 {
     public class GhostPathfinder : MonoBehaviour
     {

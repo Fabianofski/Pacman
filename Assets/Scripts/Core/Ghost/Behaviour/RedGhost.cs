@@ -5,24 +5,18 @@
 //  * Distributed under the terms of the MIT license (cf. LICENSE.md file)
 //  **/
 
-using System;
-using UnityEngine;
-
-namespace F4B1.Core.Ghost
+namespace F4B1.Core.Ghost.Behaviour
 {
-    public class OrangeGhost : Ghost
+    public class RedGhost : Ghost
     {
         protected override void Update()
         {
             if (ghostState is "DEAD") return;
 
             var nearestPlayer = GetNearestPlayerPosition();
-            destination.position = Vector2.Distance(transform.position, nearestPlayer) < 8
-                                    ? scatterPos.position : nearestPlayer;
+            destination.position = nearestPlayer;
             
             base.Update();
         }
-        
-        
     }
 }
